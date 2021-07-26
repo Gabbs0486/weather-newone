@@ -176,3 +176,9 @@ form {
   color: lightgreen;
   box-shadow: 1px solid lightgrey 0.8;
 }
+
+a,
+.name {
+  text-decoration: none;
+  color: rgb(139, 0, 139);
+}
