@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/a270b9b1a0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+  </head>
+  <body>
+    <div id="background">
+      <img src="images/world2.jpg" alt="300" srcset="images/world2.jpg" />
+      <div class="container">
+        <h1>Weather for travelers 🛫</h1>
+        <div class="card">
+          <div class="row">
+            <div class="col-sm-3">
+              <ul class="cities">
+                <li>Sevilla</li>
+                <li>Madrid</li>
+                <li>Málaga</li>
+                <li>Bilbao</li>
+              </ul>
+            </div>
+
+            <div class="col-sm-9">
+              <div class="card-data">
+                <div class="row">
+                  <div class="col-6">
+                    <ul id="format-text">
+                      <li id="degree">
+                        
+                        <br />
+                        <span>
+                          <a href="#" class="celsius-degree" id="celsius-degree"
+                            >Cº /
+                          </a></span
+                        >
+                        <span>
+                          <a
+                            href="#"
+                            class="farenheit-degree"
+                            id="farenheit-degree"
+                            >Fº</a
+                          ></span
+                        >
+                      </li>
+                      <br />
+                      <li id="cityName"> <span id="description">- </span></li>
+                      <li id="today-date-time">Sunday, Jun 6 20:20</li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul>
+                      <i class="fas fa-sun mainIcon"></i>
+                      <br />
+                      <li class="generalInfo">
+                        <strong>Precipitation</strong> 40%
+                      </li>
+                      <li class="generalInfo"><strong>Humidity</strong id="humidity"> </li>
+                      <li class="generalInfo" id= wind><strong>Wind</strong id="wind">   km/h</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="enterCity">
+            <form id="search-city-form">
+              <input
+                type="text"
+                class="cityInput"
+                id="city-input"
+                placeholder="Enter city name"
+                autofocus="off"
+              />
+              <a
+                class="btn btn-primary"
+                href="#"
+                role="button"
+                id="search-button"
+                >Search</a
+              >
+            </form>
+          </div>
+          <br>
+
+          <hr />
+          
+          <div class="row">
+            <div class="col-2 days">
+              <i class="fas fa-cloud"></i>
+              15º <br />
+              <strong> Mon </strong>
+            </div>
+            <div class="col-2 days">
+              <i class="fas fa-cloud-sun"></i>
+              18º <br />
+              <strong> Tue </strong>
+            </div>
+            <div class="col-2 days">
+              <i class="fas fa-sun"></i>
+              20º <br />
+              <strong> Wed </strong>
+            </div>
+            <div class="col-2 days">
+              <i class="fas fa-cloud"></i>
+              15º <br />
+              <strong> Thu </strong>
+            </div>
+            <div class="col-2 days">
+              <i class="fas fa-cloud-sun"></i>
+              18º <br />
+              <strong> Fri </strong>
+            </div>
+            <div class="col-2 days">
+              <i class="fas fa-sun"></i>
+              20º <br />
+              <strong> Sat </strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/java-index.js"></script>
+  </body>
+</html>
